@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Locator"
+        android:fontFamily="cursive"
+        android:textSize="50sp"
+        android:background="#FF4040"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Currently no items present!"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/noitems"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/mainlist"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="BACK"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="Back"
+        android:background="#DBB7B7"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="ADD"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="top|right"
+        android:id="@+id/addbutton"
+        android:onClick="Add"
+        android:background="#DBB7B7"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/newLinear"
+        android:layout_gravity="center"
+        android:layout_height="100dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/newname"
+            android:textColor="#000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:hint="Name of Location"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="SUBMIT"
+            android:onClick="Submit1234"
+            android:layout_marginTop="10dp"
+            android:background="#DBB7B7"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>
